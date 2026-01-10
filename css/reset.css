@@ -1,0 +1,65 @@
+/* reset.css — baseado no "modern CSS reset" de Andy Bell */
+
+/* 1. Box sizing padrão */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remover margens padrão */
+* {
+  margin: 0;
+}
+
+/* 3. Altura completa para html/body */
+html, body {
+  height: 100%;
+}
+
+/* 4. Padrões do body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Mídias responsivas */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Herdar fontes em formulários */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Listas sem estilo quando necessário */
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+}
+
+/* 8. Links e botões neutros */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 9. Reduzir animações para usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
