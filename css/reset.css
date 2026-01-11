@@ -35,7 +35,7 @@ input, button, textarea, select {
 }
 
 /* 7. Listas sem estilo quando necessário */
-ul[role="list"], ol[role="list"] {
+ul,ol{
   list-style: none;
 }
 
